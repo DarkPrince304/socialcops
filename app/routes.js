@@ -144,6 +144,7 @@ module.exports = function(app, express) {
 		User.findOne({_id: user.id}).select("subscribers").exec(function(err, result) {
 
 			var ccList = "";
+			if(!result.subscribers) return;
 			result.subscribers.forEach(function(subscriber) {
 				ccList = subscriber.email+", "+ccList;
 			});
@@ -200,5 +201,5 @@ module.exports = function(app, express) {
 	});
 
 	return routes;
-	
+
 }
