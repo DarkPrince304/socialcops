@@ -1,0 +1,21 @@
+{
+  "name": "socialcops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-jsonschema": "^1.1.6",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.3",
+    "morgan": "^1.8.1",
+    "nodemailer": "^3.1.8"
+  }
+}
